@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Bot</title>
+    <link rel="stylesheet" href="healthbot.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <nav class="nav-link">
+          <!-- Hamburger menu -->
+          <div class="menu" onclick="toggleMenu()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+
+          <!-- Menu items -->
+          <ul class="list" id="menu">
+            <li>
+              <a class="navbar-color" href="index.html#about">About Us</a>
+            </li>
+            <li>
+              <a class="navbar-color" href="index.html#offerings">Offerings</a>
+            </li>
+            <li>
+              <a class="navbar-color" href="project.html">Innovations</a>
+            </li>
+            <li><a class="navbar-color" href="index.html#events">Events</a></li>
+            <li>
+              <a
+                class="navbar-color"
+                href="index.html#partner"
+                data-section="partner"
+                >Partners</a
+              >
+            </li>
+            <li>
+              <a class="navbar-color" href="index.html#executive"
+                >Executive Team</a
+              >
+            </li>
+            <li>
+              <a class="navbar-color" href="index.html#contact">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Left section with accordion -->
+      <div class="left">
+        <h2>HEALTH BOT</h2>
+        <div class="accordion">
+          <button class="accordion-toggle" data-target="content1">
+            Introduction
+          </button>
+        </div>
+        <div class="accordion">
+          <button class="accordion-toggle" data-target="content2">
+            Features
+          </button>
+        </div>
+        <div class="accordion">
+          <button class="accordion-toggle" data-target="content3">
+            How It Works
+          </button>
+        </div>
+        <div class="accordion">
+          <button class="accordion-toggle" data-target="content4">
+            Use Cases
+          </button>
+        </div>
+        <div class="accordion">
+          <button class="accordion-toggle" data-target="content5">
+            Technical Stack
+          </button>
+        </div>
+      </div>
+
+      <!-- Center image -->
+      <div class="center">
+        <img
+          src="Gemini_Generated_Image_bh6ircbh6ircbh6i.jfif.jpg"
+          alt="Humanoid"
+        />
+      </div>
+
+      <!-- Right content area -->
+      <div class="right">
+        <div class="right-content active" id="content1">
+          <p>
+            <strong>Welcome to HealthBot! </strong> "An AI-powered healthcare
+            assistant designed to provide personalized health insights, symptom
+            diagnosis, and preventive care advice—all at your fingertips.
+            Whether you're feeling unwell or simply want to monitor your health,
+            HealthBot is here to guide you with expert insights."
+          </p>
+          <p>
+            <strong>Why HealthBot?</strong> "In today's fast-paced world, timely
+            and reliable healthcare advice is crucial. HealthBot leverages
+            artificial intelligence to bring instant health support, offering a
+            quick, efficient, and user-friendly way to manage your well-being."
+          </p>
+        </div>
+        <div class="right-content" id="content2">
+          <p><strong>Key Features of HealthBot</strong></p>
+          <ul>
+            <li>
+              <strong>Symptom Checker:</strong> "HealthBot helps users quickly
+              assess their symptoms by inputting their details, which are
+              processed through advanced AI algorithms to provide potential
+              diagnoses and next steps."
+            </li>
+
+            <li>
+              <strong>AI-Powered Diagnosis: </strong> "With access to a vast
+              healthcare dataset and sophisticated machine learning models,
+              HealthBot offers reliable health diagnoses based on symptoms,
+              history, and medical conditions."
+            </li>
+            <li>
+              <strong>Personalized Health Recommendations: </strong> "The
+              HealthBot adapts to individual users, providing personalized
+              health advice, including preventive care tips, fitness
+              suggestions, and lifestyle changes."
+            </li>
+
+            <li>
+              <strong>Health Report Generation: </strong> "Generate detailed
+              health reports after each session, summarizing diagnosis,
+              recommendations, and suggested next steps to share with your
+              healthcare provider."
+            </li>
+            <li>
+              <strong>24/7 Availability: </strong> "Available anytime,
+              anywhere—HealthBot is here for you whenever you need assistance,
+              day or night."
+            </li>
+          </ul>
+        </div>
+        <div class="right-content" id="content3">
+          <p>
+            <strong>How HealthBot Works</strong>
+          </p>
+          <p>
+            HealthBot combines cutting-edge natural language processing (NLP)
+            and machine learning technologies to provide accurate and
+            personalized healthcare advice. Here's a quick overview of how it
+            functions:
+          </p>
+          <ul>
+            <li>
+              <strong>Step 1: Symptom Input </strong> Users enter their symptoms
+              or health concerns in the chatbot.
+            </li>
+            <li>
+              <strong>Step 2: NLP Processing </strong>The AI processes the input
+              through NLP to understand medical terminology and map symptoms.
+            </li>
+            <li>
+              <strong>Step 3: Diagnosis Prediction </strong> Our machine
+              learning models use healthcare data to predict potential health
+              conditions and offer advice.
+            </li>
+            <li>
+              <strong>Step 4: User Recommendations </strong> Based on the
+              diagnosis, HealthBot provides recommendations for lifestyle
+              changes, preventive actions, or professional medical help if
+              necessary.
+            </li>
+          </ul>
+          <p><strong>The Technology Behind HealthBot:</strong></p>
+          <ul>
+            <li>
+              <strong>Machine Learning Algorithms: </strong>We use supervised
+              learning models trained on real-world medical datasets to predict
+              health outcomes.
+            </li>
+            <li>
+              <strong>NLP Models: </strong>HealthBot employs advanced NLP
+              techniques to understand free text input from users and extract
+              relevant medical data.
+            </li>
+            <li>
+              <strong>Continuous Learning: </strong>HealthBot is designed to
+              improve over time as it learns from user inputs and feedback.
+            </li>
+          </ul>
+        </div>
+        <div class="right-content" id="content4">
+          <p>
+            <strong>Real-World Use Cases of HealthBot</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Symptom Triage: </strong>"When users feel unwell, they can
+              input their symptoms into HealthBot, which provides a preliminary
+              diagnosis and suggests whether medical consultation is necessary."
+            </li>
+            <li>
+              <strong>Remote Healthcare Assistance: </strong>"HealthBot acts as
+              a bridge between patients and healthcare providers, helping people
+              in remote areas receive medical advice when in-person consultation
+              isn't immediately available."
+            </li>
+            <li>
+              <strong>Chronic Disease Monitoring: </strong>"Patients with
+              chronic diseases can regularly check in with HealthBot to monitor
+              their health condition, track symptoms, and receive
+              recommendations on managing their illness."
+            </li>
+            <li>
+              <strong>Mental Health Support: </strong>"HealthBot offers mental
+              health tips, self-care suggestions, and access to resources for
+              users dealing with anxiety, stress, or depression."
+            </li>
+          </ul>
+        </div>
+        <div class="right-content" id="content5">
+          <p>
+            <strong>Technical Stack Behind HealthBot</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>Programming Languages: </strong>
+              <ul>
+                <p>
+                  ►<strong>Python:</strong>Used for backend AI models and logic.
+                </p>
+                <p>
+                  ►<strong>JavaScript:</strong>Frontend interactions, including
+                  chatbot functionality.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <strong>AI and ML Frameworks: </strong>
+              <ul>
+                <p>
+                  ►<strong>TensorFlow & Keras:</strong>For building and training
+                  machine learning models.
+                </p>
+                <p>
+                  ►<strong>Scikit-learn: </strong>Used for medical diagnosis and
+                  classification tasks.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <strong>NLP Libraries: </strong>
+              <ul>
+                <p>
+                  ►<strong>SpaCy:</strong>For understanding and processing user
+                  input in natural language.
+                </p>
+                <p>
+                  ►<strong>NLTK: </strong>For tokenization and medical text
+                  parsing.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <strong>Backend: </strong>
+              <ul>
+                <p>
+                  ►<strong>Flask/Django: </strong>Backend framework for API
+                  handling and chatbot integration.
+                </p>
+                <p>
+                  ►<strong>AWS/Heroku: </strong>Cloud hosting and deployment for
+                  AI models.
+                </p>
+              </ul>
+            </li>
+            <li>
+              <strong>Frontend: </strong>
+              <ul>
+                <p>
+                  ►<strong>HTML5, CSS3, JavaScript :</strong>For structuring and
+                  styling the website.
+                </p>
+                <p>
+                  ►<strong>React.js :</strong>For managing dynamic interactions
+                  with the chatbot.
+                </p>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="healthbot.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Enquiry Form</title>
+    <link rel="stylesheet" href="style_form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enquiry Form</h1>
+      <form id="enquiryForm" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <!-- <button type="button" id="sendOtp">Send OTP</button> -->
+
+        <!-- <label for="otp">OTP:</label>
+        <input type="text" id="otp" name="otp" required disabled /> -->
+        <!-- <button type="button" id="verifyOtp" disabled>Verify OTP</button> -->
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="index_form.js"></script>
+  </body>
+</html>

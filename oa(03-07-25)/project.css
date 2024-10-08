@@ -1,0 +1,821 @@
+html * {
+  font-family: "Gotham A", "Gotham B", sans-serif !important;
+}
+
+.poppins-thin {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Gotham A", "Gotham B", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.navigation {
+  position: absolute;
+  top: 20px; /* Positioning from the top */
+  right: 20px; /* Positioning from the right */
+
+  padding: 10px; /* Space inside the border */
+}
+
+.navigation ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox for horizontal layout */
+  gap: 15px; /* Space between items */
+  margin: 0; /* Remove margin */
+}
+
+.navigation li {
+  /* Individual item styling if needed */
+}
+
+.navigation a {
+  display: block; /* Makes the link fill the list item */
+  padding: 10px 15px; /* Add padding for clickable area */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+.navigation a:hover {
+  background-color: #ffffff; /* Light background on hover */
+  color: black; /* Change text color on hover */
+}
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #e0f2f1;
+  /* Remove margin and add padding instead */
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+/* Header Styling */
+.main-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-card h3 {
+  margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Explore Button Styling */
+.explore-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+  background-color: #0056b3;
+}
+.ai-adventure-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid grey; /* Border around the container */
+  padding: 20px;
+  max-width: 1200px; /* Optional max width */
+  margin: 0 auto; /* Center the container */
+  flex-wrap: wrap; /* Ensure responsiveness */
+  margin-top: 10px;
+  border-radius: 15px; /* Rounded corners with a 15px radius */
+  margin-bottom: 50px;
+}
+
+.ai-image {
+  flex: 1;
+  max-width: 40%; /* Control image width */
+  padding-right: 20px;
+}
+
+.ai-image img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd; /* Border around the image */
+  border-radius: 15px;
+}
+
+.ai-text {
+  flex: 2;
+  max-width: 60%; /* Control paragraph width */
+  text-align: left; /* Align the text left */
+}
+
+.ai-text h2 {
+  margin-bottom: 15px;
+}
+
+.ai-text p {
+  margin-bottom: 10px;
+  line-height: 1.6; /* Improve paragraph readability */
+}
+/* Mobile View */
+@media (max-width: 768px) {
+  .ai-adventure-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .ai-image {
+    max-width: 100%; /* Full width for the image */
+    padding-right: 0; /* Remove right padding */
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  .ai-text {
+    max-width: 100%; /* Full width for the text */
+    text-align: center; /* Center the text on smaller screens */
+  }
+}
+/* Base styles for the navigation */
+/* Base styles for the navigation in desktop view */
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navigation ul li {
+  margin-right: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Hide the toggle button and make the navigation visible in desktop view */
+.menu-toggle {
+  display: none; /* Hide the toggle button on desktop */
+}
+
+@media (max-width: 768px) {
+  /* Mobile view styles */
+
+  .navigation {
+    display: none; /* Hide the navigation in mobile view */
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 200px; /* Adjust as necessary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .navigation ul {
+    display: block;
+    padding: 20px; /* Spacing inside the menu */
+  }
+
+  .navigation ul li {
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the toggle button in mobile view */
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #ffffff;
+    position: absolute;
+    top: 15px;
+    right: 30px; /* Position the toggle button in the top right corner */
+    z-index: 1001; /* Ensure it stays above other content */
+  }
+
+  /* Show the navigation when active */
+  .navigation.active {
+    display: block;
+  }
+  .navigation a {
+    text-decoration: none;
+    color: black;
+  }
+}
+/* Container to hold the text with margin space and border */
+.train-text-container {
+  width: calc(100% - 40px); /* Full width minus left and right margin */
+  height: 60px; /* Fixed height for the container */
+  overflow: hidden; /* Hide overflowing text */
+  position: relative;
+  background-color: #f0f0f0; /* Optional: background color */
+  padding: 10px; /* Optional: padding around text */
+  margin: 0 20px; /* Margin space on left and right sides */
+
+  border-radius: 15px; /* Rounded corners with a 15px radius */
+  box-sizing: border-box; /* Include border in width calculation */
+  display: flex; /* Flexbox to center content */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  padding: 50px;
+  margin-bottom: 40px;
+}
+
+/* Wrapper for the text to allow continuous scrolling */
+.train-text-wrapper {
+  display: inline-block;
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: runText 10s linear infinite; /* Adjust the duration as needed */
+  width: 100%; /* Set the width of the container */
+}
+
+/* Animation keyframes for continuous scrolling */
+@keyframes runText {
+  0% {
+    transform: translateX(100%); /* Start off-screen (right) */
+  }
+  100% {
+    transform: translateX(-100%); /* End off-screen (left) */
+  }
+}
+.container1 {
+  background-color: #dcdcdc;
+  padding: 40px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  .train-text-container {
+    width: calc(100% - 20px); /* Reduce margin to fit smaller screens */
+    height: 40px; /* Adjust height for mobile */
+    padding: 5px; /* Reduce padding for mobile */
+    margin: 0 10px; /* Less margin for smaller screens */
+    font-size: 12px; /* Smaller font size for readability */
+    border-radius: 10px; /* Slightly smaller border radius */
+  }
+
+  .train-text-wrapper {
+    animation: runText 8s linear infinite; /* Speed up for mobile, can adjust as needed */
+  }
+
+  /* Keyframe animation can stay the same or be adjusted if necessary */
+}
+
+/* Extra small screens (up to 480px) */
+@media (max-width: 480px) {
+  .train-text-container {
+    width: calc(100% - 10px); /* Even less margin for very small screens */
+    height: 30px; /* Smaller container height */
+    font-size: 10px; /* Smaller font size for extra small screens */
+    padding: 3px; /* Minimal padding */
+    margin-bottom: 30px;
+  }
+
+  .train-text-wrapper {
+    animation: runText 7s linear infinite; /* Further speed up on very small screens */
+  }
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* color: #ffffff; */
+  font-size: 18px;
+}
+
+nav ul li a i {
+  margin-right: 5px;
+}
+#about {
+  display: block;
+}
+
+/* Hide other sections initially */
+#events,
+#partner,
+#executive,
+#contact,
+#offerings,
+#innovations {
+  display: none;
+}
+
+.logo {
+  position: relative;
+  margin-left: 20px;
+  bottom: 150px;
+}
+
+/* Styles for desktop view */
+@media only screen and (min-width: 741px) {
+  .logo {
+    font-size: 24px;
+    /* Adjust font size for desktop view */
+  }
+}
+
+/* Styles for mobile view */
+@media only screen and (max-width: 740px) {
+  .logo {
+    font-size: 18px;
+    bottom: 10px;
+    /* Adjust font size for mobile view */
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  background-color: white;
+  background-size: cover;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-image 0.5s ease-in-out;
+  background-image: url("giphy.gif");
+
+  position: relative; /* For absolute positioning of text */
+  color: white; /* Text color */
+}
+.header-text {
+  position: absolute; /* Position text relative to #header */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact center */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  border-radius: 10px; /* Optional rounded corners */
+  transform: translate(-50%, -50%);
+}
+.header-text h1 {
+  margin: 0; /* Removes default margin */
+  font-size: 36px; /* Adjust font size */
+}
+
+.header-text p {
+  margin: 0; /* Removes default margin */
+  font-size: 18px; /* Adjust font size */
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  #header {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Reduce space between logo and text */
+  }
+
+  .header-text {
+    padding: 15px; /* Reduce padding for smaller screens */
+    font-size: 16px; /* Adjust font size */
+    width: 90%; /* Ensure text container fits within mobile screens */
+  }
+
+  .header-text h1 {
+    font-size: 28px; /* Adjust font size for mobile */
+  }
+
+  .header-text p {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  #header {
+    height: 250px; /* Further adjust height for very small screens */
+  }
+
+  .logo {
+    margin-bottom: 5px; /* Reduce space further */
+  }
+
+  .header-text {
+    padding: 10px; /* Further reduce padding */
+    font-size: 14px; /* Adjust font size */
+    margin-top: 40px;
+  }
+
+  .header-text h1 {
+    font-size: 18px; /* Further adjust font size for mobile */
+  }
+
+  .header-text p {
+    font-size: 12px; /* Further adjust font size for mobile */
+  }
+}
+@media (max-width: 600px) {
+  #header {
+    height: 200px;
+    background-position: center;
+    /* background-size: cover; */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #header {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #header {
+    height: 400px;
+  }
+}
+
+#header {
+  background-size: cover;
+  padding-right: 30px;
+}
+
+#header img {
+  width: 120px;
+  height: 80px;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.nav-link {
+  position: relative;
+  bottom: 150px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 45px;
+  margin-top: 0px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+/* Styles for mobile view */
+@media (max-width: 767px) {
+  nav a {
+    color: black; /* Change this to the color you want for mobile view */
+  }
+  nav.nav-link {
+    position: relative;
+    bottom: 100px;
+  }
+}
+
+.navbar-color.active,
+.navbar-color:hover {
+  background: #00bfcc;
+  transition: 0.3s ease;
+}
+
+#homecontent {
+  display: block;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  .menu {
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 75px;
+  }
+
+  ul.list {
+    list-style-type: none;
+    position: fixed;
+    top: 105px;
+    flex-direction: column;
+    right: 0;
+    background: #f8f8f8;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  ul {
+    flex-direction: column;
+  }
+
+  .logo {
+    align-self: flex-start;
+    margin: 10px 0px 0px 20px;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  /* by jeeva */
+
+  .menu {
+    display: block;
+  }
+  .menu-line {
+    height: 3px;
+    width: 20px;
+    background-color: #ffffff;
+    margin-bottom: 3px;
+  }
+}
+
+/* by jeeva */
+
+.display {
+  transform: translateX(0%) !important;
+}
+
+@media all and (max-width: 300px) {
+  .logo {
+    align-self: center;
+    /* Center the logo within its container */
+    margin: 10px 0;
+    /* Adjust margin for spacing */
+    max-width: 100%;
+    /* Ensure the logo doesn't exceed the width of its container */
+  }
+}
+
+/* Style for the text */
+h5 {
+  margin: 5px 0;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  .menu {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  ul.list {
+    list-style-type: none;
+    position: fixed;
+    top: 105px;
+    flex-direction: column;
+    right: 0;
+    background: #f8f8f8;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  ul {
+    flex-direction: column;
+  }
+
+  .logo {
+    align-self: flex-start;
+    margin: 10px 0px 0px 20px;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  /* by jeeva */
+
+  .menu {
+    display: block;
+  }
+}

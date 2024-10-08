@@ -1,0 +1,420 @@
+body{
+  background-color: #6495ed;
+}
+
+/* Center the entire container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+/* Style the content */
+/* Content styling */
+.content {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Paragraph styling */
+.content p {
+  margin: 0 0 15px; /* Adds bottom margin to paragraphs */
+  text-align: justify; /* Justifies the text */
+}
+
+/* Hashtag styling */
+.content p span.hashtag {
+  color: #007bff;
+  font-weight: bold;
+}
+.content iframe {
+  display: block;
+  margin: 0 auto; /* Center the iframe horizontally */
+}
+
+/* Optional: Add some responsive styling for very small screens */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .content iframe {
+    width: 100%; /* Make iframe full-width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+.simple-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto 15px; /* Centers the image and adds bottom margin */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  /* color: #ffffff; */
+  font-size: 18px;
+}
+
+nav ul li a i {
+  margin-right: 5px;
+}
+#about {
+  display: block;
+}
+
+/* Hide other sections initially */
+#events,
+#partner,
+#executive,
+#contact #offerings {
+  display: none;
+}
+
+.logo {
+  position: relative;
+  margin-left: 20px;
+  bottom: 130px;
+}
+
+/* Styles for desktop view */
+@media only screen and (min-width: 741px) {
+  .logo {
+    font-size: 24px;
+    /* Adjust font size for desktop view */
+  }
+}
+
+/* Styles for mobile view */
+@media only screen and (max-width: 740px) {
+  .logo {
+    font-size: 18px;
+    bottom: 10px;
+    /* Adjust font size for mobile view */
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+#header {
+  background-color: white;
+  background-size: cover;
+  text-align: center;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-image 0.5s ease-in-out;
+
+  position: relative; /* For absolute positioning of text */
+  color: white; /* Text color */
+  background-image: url(eventsbackg1.gif);
+}
+@media (max-width: 600px) {
+  #header {
+    height: 200px;
+    background-position: center;
+    /* background-size: cover; */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #header {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #header {
+    height: 400px;
+  }
+}
+
+#header {
+  background-size: cover;
+  padding-right: 30px;
+}
+
+#header img {
+  width: 120px;
+  height: 80px;
+  margin-top: 10px;
+}
+.header-text {
+  position: absolute; /* Position text relative to #header */
+  top: 60%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for exact center */
+  padding: 20px; /* Optional padding for better readability */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for readability */
+  border-radius: 10px; /* Optional rounded corners */
+}
+.header-text h1 {
+  margin: 0; /* Removes default margin */
+  font-size: 36px; /* Adjust font size */
+}
+
+.header-text p {
+  margin: 0; /* Removes default margin */
+  font-size: 18px; /* Adjust font size */
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+  #header {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* Reduce space between logo and text */
+  }
+
+  .header-text {
+    padding: 15px; /* Reduce padding for smaller screens */
+    font-size: 16px; /* Adjust font size */
+    width: 90%; /* Ensure text container fits within mobile screens */
+  }
+
+  .header-text h1 {
+    font-size: 28px; /* Adjust font size for mobile */
+  }
+
+  .header-text p {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  #header {
+    height: 270px; /* Further adjust height for very small screens */
+  }
+
+  .logo {
+    margin-bottom: 5px; /* Reduce space further */
+  }
+
+  .header-text {
+    padding: 10px; /* Further reduce padding */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .header-text h1 {
+    font-size: 18px; /* Further adjust font size for mobile */
+  }
+
+  .header-text p {
+    font-size: 12px; /* Further adjust font size for mobile */
+  }
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.nav-link {
+  position: relative;
+  bottom: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 45px;
+  margin-top: 0px;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+/* Styles for mobile view */
+@media (max-width: 767px) {
+  nav a {
+    color: #000000; /* Change this to the color you want for mobile view */
+  }
+  nav.nav-link {
+    position: relative;
+    bottom: 145px;
+  }
+}
+
+.navbar-color.active,
+.navbar-color:hover {
+  background: #00bfcc;
+  transition: 0.3s ease;
+}
+
+#homecontent {
+  display: block;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  .menu {
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 70px;
+  }
+
+  ul.list {
+    list-style-type: none;
+    position: fixed;
+    top: 105px;
+    flex-direction: column;
+    right: 0;
+    background: #f8f8f8;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  ul {
+    flex-direction: column;
+  }
+
+  .logo {
+    align-self: flex-start;
+    margin: 10px 0px 0px 20px;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  /* by jeeva */
+
+  .menu {
+    display: block;
+  }
+}
+
+/* by jeeva */
+
+.display {
+  transform: translateX(0%) !important;
+}
+
+@media all and (max-width: 300px) {
+  .logo {
+    align-self: center;
+    /* Center the logo within its container */
+    margin: 10px 0;
+    /* Adjust margin for spacing */
+    max-width: 100%;
+    /* Ensure the logo doesn't exceed the width of its container */
+  }
+}
+
+/* Style for the text */
+h5 {
+  margin: 5px 0;
+}
+.menu-line {
+  height: 3px;
+  width: 20px;
+  background-color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+@media all and (max-width: 900px) {
+  .menu {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  ul.list {
+    list-style-type: none;
+    position: fixed;
+    top: 105px;
+    flex-direction: column;
+    right: 0;
+    background: #f8f8f8;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 20px;
+  }
+}
+
+@media all and (max-width: 740px) {
+  ul {
+    flex-direction: column;
+  }
+
+  .logo {
+    align-self: flex-start;
+    margin: 10px 0px 0px 20px;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  /* by jeeva */
+
+  .menu {
+    display: block;
+  }
+}

@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Left section with accordion */
+.left {
+  width: 20%;
+  padding: 20px;
+}
+
+.accordion {
+  margin-bottom: 20px;
+}
+
+.accordion button {
+  background-color: #f9f9f9;
+  color: #444;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 16px;
+  position: relative;
+}
+
+.accordion button:hover,
+.accordion button.active {
+  background-color: #ccc;
+}
+/* Icon styling */
+.accordion button::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 20px;
+  color: #444;
+}
+
+.accordion button.active::after {
+  content: "−"; /* minus symbol */
+}
+
+/* Center image section */
+.center {
+  width: 40%;
+  text-align: center;
+}
+
+.center img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px; /* Adjust the value as needed */
+}
+
+/* Right content section */
+.right {
+  width: 30%;
+  padding: 20px;
+  border-left: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.right-content {
+  display: none;
+  font-size: 16px;
+  margin-top: 65px;
+}
+
+.right-content.active {
+  display: block;
+}
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .left,
+  .right,
+  .center {
+    width: 100%; /* Take full width on mobile */
+    padding: 10px;
+  }
+
+  .center img {
+    margin: 0 auto;
+  }
+
+  .right {
+    border-left: none; /* Remove the border for mobile */
+    padding-top: 0;
+  }
+
+  .accordion button {
+    font-size: 14px;
+  }
+
+  .right-content {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .right-content {
+    font-size: 12px;
+  }
+}
+/* Basic styling for body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hamburger menu button */
+.menu {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.menu-line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+
+/* Menu items (hidden by default) */
+.list {
+  list-style: none; /* Removes the bullet points */
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #d1b1b1;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 50px 20px;
+  display: none;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Links inside the menu */
+.navbar-color {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-color:hover {
+  color: #ff5252;
+}
+
+/* Active class for when the menu is visible */
+#menu.active {
+  display: block;
+  transform: translateX(0);
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HPC</title>
+    <link rel="stylesheet" href="style5.css" />
+    <script src="index1.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div class="logo">
+          <img src="oalogolatest.png" alt="Logo" id="main-navigation" />
+        </div>
+        <div class="header-text">
+          <h1>
+            REVOLUTIONIZE YOUR COMPUTING POWER WITH HIGH-PERFORMANCE COMPUTING
+          </h1>
+          <p>DELIVERING CUTTING-EDGE AND SCALABLE HPC SOLUTIONS</p>
+        </div>
+        <nav class="nav-link">
+          <ul class="list" id="open">
+            <li>
+              <a
+                class="navbar-color"
+                href="index.html#about"
+                data-section="about"
+                >About Us</a
+              >
+            </li>
+            <li><a class="navbar-color" href="project.html" data-section="about">Innovations</a></li>
+            <li>
+              <a
+                class="navbar-color"
+                href="index.html#offerings"
+                data-section="offerings"
+                >Offerings</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-color"
+                href="index.html#events"
+                data-section="events"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-color"
+                href="index.html#partner"
+                data-section="partner"
+                >Partners</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-color"
+                href="index.html#executive"
+                data-section="executive"
+                >Executive Team</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-color"
+                href="index.html#contact"
+                data-section="contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div onclick="myFunction()" class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+        </nav>
+      </div>
+    </div>
+<div class="backg">
+    <div>
+      <h1>About High Performance Computing</h1>
+      <p>
+        High-Performance Computing (HPC) development and infrastructure
+        management involve building, maintaining, and optimizing computing
+        systems that handle massive datasets and complex calculations at high
+        speeds. Here’s an overview of key aspects:
+      </p>
+      <h3>HPC Architecture Development</h3>
+      <ul>
+        <li><strong>Cluster Design:</strong>  HPC systems typically use clusters of powerful computers.
+          The design involves choosing appropriate hardware (CPUs, GPUs),
+          interconnects (InfiniBand, Ethernet), and storage (high-speed parallel file
+          systems like Lustre).</li>
+       </ul>
+      <ul>
+       
+          <li><strong>Scalability:</strong>  HPC systems are designed to scale efficiently, allowing
+            additional nodes without diminishing performance.</li>
+
+      </ul>
+      <ul>
+       
+        <li><strong>Energy Efficiency:</strong>  Energy management is crucial since HPC systems
+          consume massive power. Modern designs aim for green computing via
+          techniques like dynamic voltage scaling.</li>
+
+    </ul>
+    <h3>Infrastructure Components</h3>
+    <ul>
+      <li><strong>Processors:</strong>  HPC leverages CPUs and increasingly GPUs for parallel
+        processing, often using architectures like x86, ARM, or specialized
+        accelerators (e.g., NVIDIA GPUs, Intel Xeon Phi).</li>
+     </ul>
+    <ul>
+     
+        <li><strong>Networking:</strong> High-speed, low-latency networks connect nodes, using
+          technologies like InfiniBand or high-speed Ethernet for inter-node
+          communication.</li>
+
+    </ul>
+    <ul>
+     
+      <li><strong>Storage:</strong> Fast, distributed storage systems (e.g., Lustre, GPFS) are crucial
+        for storing and retrieving vast amounts of data efficiently.</li>
+
+  </ul>
+  <h3>Software Stack</h3>
+  <ul>
+    <li><strong>Operating Systems:</strong>Most HPC systems use Linux-based OSs tailored for
+      parallel computing.</li>
+   </ul>
+  <ul>
+   
+      <li><strong>Middleware:</strong>Tools like Slurm and PBS manage job scheduling and
+        resource allocation in an HPC environment.</li>
+
+  </ul>
+  <ul>
+   
+    <li><strong>Parallel Programming Models:</strong> HPC development often requires
+      programming using MPI (Message Passing Interface) or OpenMP for
+      parallel task execution.</li>
+
+</ul>
+<ul>
+   
+  <li><strong>Compilers & Libraries:</strong> Optimized compilers (e.g., Intel, GCC) and math
+    libraries (e.g., BLAS, LAPACK) enhance performance.</li>
+
+</ul>
+<h3>Cloud HPC</h3>
+<ul>
+  <li><strong>Cloud Integration:</strong>Cloud platforms like AWS, Azure, and Google Cloud
+offer HPC-as-a-Service, allowing businesses to rent HPC resources on
+demand rather than build physical infrastructure.</li>
+ </ul>
+<ul>
+ 
+    <li><strong>Hybrid HPC:</strong>Many organizations use a mix of on-premises and cloud HPC,
+      optimizing for cost and performance.</li>
+
+</ul>
+<h3>Management Tools</h3>
+<ul>
+  <li><strong>Monitoring:</strong>Tools like Ganglia, Nagios, or Prometheus monitor the health of
+    the HPC cluster, identifying bottlenecks and performance issues.</li>
+ </ul>
+<ul>
+ 
+    <li><strong>Automation:</strong>Automating tasks like job scheduling, data backup, and
+      software updates ensures efficient management of large clusters.</li>
+
+</ul>
+<h3>Workloads</h3>
+<ul>
+  <li><strong>AI & Machine Learning:</strong>HPC is widely used to train deep learning models
+    with large datasets and complex algorithms.</li>
+ </ul>
+<ul>
+ 
+    <li><strong>Simulations:</strong>Fields like weather forecasting, drug discovery, and financial
+      modeling rely on HPC for running large-scale simulations.</li>
+
+</ul>
+<ul>
+ 
+  <li><strong>Scientific Research</strong>Simulations in quantum mechanics, bioinformatics,
+    and astronomy make extensive use of HPC.</li>
+
+</ul>
+<h3>Security</h3>
+<ul>
+  <li><strong>Data Protection:</strong>Secure data transmission, access control, and encryption
+    are crucial for safeguarding sensitive research data in HPC systems.</li>
+ </ul>
+<ul>
+ 
+    <li><strong>User Management:</strong>Managing access rights and privileges across multiple
+      users and projects.</li>
+
+</ul>
+<p>Managing an HPC infrastructure effectively involves ensuring high availability,
+  minimizing downtime, and optimizing resource usage to handle demanding
+  workloads.</p>
+    </div>
+    <div class="container-intro">
+      <img src="HPC2.jpg" alt="image" />
+      <div class="content">
+        <h2>Who We Are?</h2>
+        <p>
+          Object Automation System Solutions Inc is a transformation partner
+          that focuses on enhancing customers' vision and growth by
+          understanding their key business drivers, enterprise needs,
+          go-to-market models, pricing and partnership models, and network
+          slicing and exposure journey.
+        </p>
+      </div>
+    </div>
+    <div class="para2">
+      <h2>What We Do?</h2>
+      <h4>Our Service Offerings</h4>
+      <div class="container2">
+        <div class="accordion">
+          <div class="accordion-header">
+            <p>HPC Consulting & Development:</p>
+            <span class="icon">+</span>
+          </div>
+
+          <div class="accordion-content">
+            <ul id="lab-content" class="content2">
+              <li>Custom-built HPC systems for
+                computational tasks like scientific research, financial modeling, weather
+                forecasting, and drug discovery.</li>
+             
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-header">
+            <p>Cloud HPC Solutions</p>
+            <span class="icon">+</span>
+          </div>
+
+          <div class="accordion-content">
+            <ul id="lab-content" class="content2">
+              <li>Offering cloud-based HPC services to clients,
+                providing them with scalable, cost-effective computing power for big data
+                processing, AI model training, and simulation workloads.</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">
+            <p>HPC Infrastructure Management</p>
+            <span class="icon">+</span>
+          </div>
+
+          <div class="accordion-content">
+           
+            <ul id="lab-content" class="content2">
+              <li>End-to-end management of HPC
+                infrastructure, including cluster design, system optimization, and workflow
+                automation.</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">
+            <p>Data Analytics on HPC:</p>
+            <span class="icon">+</span>
+          </div>
+
+          <div class="accordion-content">
+            <ul id="lab-content" class="content2">
+              <li>Solutions that leverage HPC capabilities to analyze
+                vast datasets for fields like bioinformatics, genomics, and physics.</li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-header">
+            <p>Hybrid Cloud HPC Services</p>
+            <span class="icon">+</span>
+          </div>
+
+          <div class="accordion-content">
+            <ul id="lab-content" class="content2">
+              <li>Integration of on-premise and cloud HPC
+                environments, optimizing performance and cost for your clients.</li>
+              
+            </ul>
+          </div>
+        </div>
+       
+      <div class="accordion">
+        <div class="accordion-header">
+          <p>Curriculum/Courses</p>
+          <span class="icon">+</span>
+        </div>
+
+        <div class="accordion-content">
+          <p>
+            Our High-Performance Computing (HPC) Curriculum empowers numerous professionals and scholars in mastering the advanced computational technologies required for solving complex scientific and engineering problems efficiently.
+          </p>
+          <a class="Curriculum" href="">Download Curriculum for HPC
+
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="para3">
+      <h2>Why Choose Us?</h2>
+      <div class="container1">
+        <div class="content1">
+          <p>
+            Our Focus, Quality and Agility in Advisory, Solutioning and
+            Execution partnership
+          </p>
+          <ul>
+            <li>Deliver faster and secured Services</li>
+            <li>Understanding the customer's challenges.</li>
+            <li>Developing the appropriate value proposition.</li>
+            <li>Pricing Strategy.</li>
+            <li>Proposing customer solutions.</li>
+            <li>Technology solution partner strategy.</li>
+          </ul>
+        </div>
+        <img
+          src="HPC1.jpg"
+          alt="5G-technology"
+        />
+      </div>
+    </div>
+    <p style="text-align: center;">Would you like to dive deeper into any specific technology within high-performance computing (HPC)?<br>
+      Reach our team hr@object-automation.com</p>
+    </div>
+  </body>
+</html>
